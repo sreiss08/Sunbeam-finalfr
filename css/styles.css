@@ -402,6 +402,23 @@ section{
   transition:all .4s cubic-bezier(.4,0,.2,1);
 }
 
+.service-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  cursor: pointer;
+}
+
+.service-card-link .service-card:hover {
+  transform:translateY(-8px);
+  box-shadow:var(--shadow-xl);
+  border-color:rgba(253,241,5,.3);
+}
+
+.service-card-link .service-card:active {
+  transform:translateY(-4px);
+}
+
 .service-card:hover{
   transform:translateY(-8px);
   box-shadow:var(--shadow-xl);
