@@ -24,6 +24,7 @@ body{
   color:var(--text-light);
   background:var(--bg-dark);
   line-height:1.6;
+  padding-top:120px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x:hidden;
@@ -137,15 +138,17 @@ header{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:20px 0;
-  gap:40px;
+  padding:16px 0;
+  gap:32px;
 }
 
 .logo{
-  height:80px;
+  height:70px;
   width:auto;
-  max-width:400px;
-  filter:drop-shadow(0 0 20px rgba(253,241,5,.3));
+  max-width:350px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter:drop-shadow(0 0 15px rgba(253,241,5,.25));
 }
 
 .nav-menu{
