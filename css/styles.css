@@ -833,8 +833,12 @@ footer{
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 12px;
   z-index: 1001;
+  -webkit-tap-highlight-color: rgba(253, 241, 5, 0.3);
+  touch-action: manipulation;
+  min-width: 44px;
+  min-height: 44px;
 }
 
 .mobile-menu-toggle span {
