@@ -1,0 +1,239 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  # Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "content/settings/general.json"
+        fields:
+          - {label: "Business Name", name: "business_name", widget: "string", default: "Sunbeam Window & Door Company"}
+          - {label: "Logo", name: "logo", widget: "image", hint: "Upload your logo (PNG recommended)"}
+          - {label: "Favicon", name: "favicon", widget: "image", hint: "Upload favicon (32x32 PNG/ICO)"}
+          - {label: "Phone Number", name: "phone", widget: "string", default: "(856) 662-3300"}
+          - {label: "Email", name: "email", widget: "string", default: "info@sunbeamwindow.com"}
+          - label: "Address"
+            name: "address"
+            widget: "object"
+            fields:
+              - {label: "Street", name: "street", widget: "string"}
+              - {label: "City", name: "city", widget: "string"}
+              - {label: "State", name: "state", widget: "string"}
+              - {label: "Zip", name: "zip", widget: "string"}
+          - label: "Business Hours"
+            name: "hours"
+            widget: "object"
+            fields:
+              - {label: "Monday-Friday", name: "weekday", widget: "string"}
+              - {label: "Saturday", name: "saturday", widget: "string"}
+              - {label: "Sunday", name: "sunday", widget: "string"}
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            required: false
+            fields:
+              - {label: "Facebook URL", name: "facebook", widget: "string", required: false}
+              - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - {label: "Site Description", name: "description", widget: "text"}
+              - {label: "Keywords", name: "keywords", widget: "string"}
+
+  # Home Page  
+  - name: "homepage"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Content"
+        file: "content/pages/home.json"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Badge", name: "badge", widget: "string"}
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+              - {label: "Background Image", name: "image", widget: "image"}
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: "Number", name: "number", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Tags", name: "tags", widget: "list"}
+
+  # Windows Page
+  - name: "windows"
+    label: "Windows Page"
+    files:
+      - name: "windows_content"
+        label: "Windows Content"
+        file: "content/pages/windows.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+  # Doors Page
+  - name: "doors"
+    label: "Doors Page"
+    files:
+      - name: "doors_content"
+        label: "Doors Content"
+        file: "content/pages/doors.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+  # Window Treatments
+  - name: "treatments"
+    label: "Window Treatments"
+    files:
+      - name: "treatments_content"
+        label: "Treatments Content"
+        file: "content/pages/treatments.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+  # Awnings
+  - name: "awnings"
+    label: "Awnings Page"
+    files:
+      - name: "awnings_content"
+        label: "Awnings Content"
+        file: "content/pages/awnings.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "text"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Image", name: "image", widget: "image"}
+
+  # About Page
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about_content"
+        label: "About Content"
+        file: "content/pages/about.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          - {label: "Introduction", name: "intro", widget: "markdown"}
+
+  # Service Areas
+  - name: "service_areas"
+    label: "Service Areas"
+    files:
+      - name: "areas"
+        label: "Areas We Serve"
+        file: "content/pages/service-areas.json"
+        fields:
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Introduction Text", name: "intro", widget: "text"}
+          - label: "Counties"
+            name: "counties"
+            widget: "list"
+            fields:
+              - {label: "County Name", name: "name", widget: "string"}
+              - {label: "Towns", name: "towns", widget: "list"}
+
+  # Blog Posts
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "Sunbeam Team"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Category", name: "category", widget: "select", options: ["Windows", "Doors", "Window Treatments", "Awnings", "Tips", "News"]}
+
+  # FAQ
+  - name: "faq"
+    label: "FAQ"
+    folder: "content/faq"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Question", name: "question", widget: "string"}
+      - {label: "Answer", name: "answer", widget: "markdown"}
+      - {label: "Category", name: "category", widget: "select", options: ["General", "Windows", "Doors", "Treatments", "Awnings", "Installation"]}
+      - {label: "Order", name: "order", widget: "number", default: 0}
+
+  # Reviews
+  - name: "reviews"
+    label: "Reviews"
+    folder: "content/reviews"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Customer Name", name: "name", widget: "string"}
+      - {label: "Review", name: "review", widget: "text"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5}
+      - {label: "Source", name: "source", widget: "string", default: "Google"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: true}
+
+  # Gallery
+  - name: "gallery"
+    label: "Gallery"
+    folder: "content/gallery"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["Windows", "Doors", "Treatments", "Awnings", "Before/After"]}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}

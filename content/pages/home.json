@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "badge": "Serving South Jersey Since 1946",
+    "headline": "Premium Windows, Doors & Window Treatments",
+    "subheadline": "Family-owned for four generations. In-house certified installers—never subcontractors. Trusted by New Jersey families for over 75 years.",
+    "hero_image": "https://sunbeamwindow.com/wp-content/uploads/2025/04/HD-Roller-Shades-12.webp"
+  },
+  "stats": [
+    {
+      "number": "75+",
+      "label": "Years in Business"
+    },
+    {
+      "number": "4",
+      "label": "Generations of Expertise"
+    },
+    {
+      "number": "100%",
+      "label": "In-House Installers"
+    },
+    {
+      "number": "4.7★",
+      "label": "Average Customer Rating"
+    }
+  ],
+  "services": [
+    {
+      "title": "Replacement Windows",
+      "description": "ProVia windows custom-fit for New Jersey's climate. Energy Star certified options reduce heating and cooling costs by up to 30%. Installed by our certified in-house team.",
+      "image": "https://sunbeamwindow.com/wp-content/uploads/2025/02/specialty-windows-03.webp",
+      "tags": ["ProVia", "Energy Efficient", "Lifetime Warranty"]
+    },
+    {
+      "title": "Entry & Patio Doors",
+      "description": "Custom ProVia doors built for beauty, security, and weather resistance. Choose from fiberglass, steel, or wood—all professionally installed with precision.",
+      "image": "https://sunbeamwindow.com/wp-content/uploads/2025/02/provia-doors-01.jpg",
+      "tags": ["ProVia", "Custom Design", "Security Features"]
+    },
+    {
+      "title": "Window Treatments",
+      "description": "Hunter Douglas shades, blinds, and shutters custom-designed for your needs. Optional PowerView® automation for smart home convenience.",
+      "image": "https://sunbeamwindow.com/wp-content/uploads/2025/07/Hunter-Douglas-Everwood-Faux-Wood-Blinds-in-Office.jpg",
+      "tags": ["Hunter Douglas", "Motorized Options", "Custom Fit"]
+    },
+    {
+      "title": "Awnings & Exterior Shades",
+      "description": "Aristocrat retractable awnings and solar shades for patios, windows, and storefronts. Block up to 94% of UV rays while reducing cooling costs.",
+      "image": "https://sunbeamwindow.com/wp-content/uploads/2025/04/HD-Awnings-09.jpg",
+      "tags": ["Aristocrat", "Retractable", "12-Year Warranty"]
+    }
+  ]
+}

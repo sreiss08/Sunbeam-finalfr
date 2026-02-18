@@ -1,0 +1,26 @@
+{
+  "business_name": "Sunbeam Window & Door Company",
+  "logo": "/images/sunbeam-logo.png",
+  "favicon": "/images/favicon.png",
+  "phone": "(856) 662-3300",
+  "email": "info@sunbeamwindow.com",
+  "address": {
+    "street": "5825 Clayton Ave Unit B",
+    "city": "Pennsauken Township",
+    "state": "NJ",
+    "zip": "08109"
+  },
+  "hours": {
+    "weekday": "8:30 AM – 5:00 PM",
+    "saturday": "By Appointment",
+    "sunday": "Closed"
+  },
+  "social": {
+    "facebook": "",
+    "instagram": ""
+  },
+  "seo": {
+    "description": "South Jersey's trusted window and door experts since 1946. In-house certified installers. Professional installation of energy-efficient windows, entry doors, and premium treatments.",
+    "keywords": "windows nj, doors nj, window replacement, hunter douglas, provia windows, pennsauken nj"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Areas We Serve in South Jersey & Philadelphia",
+  "intro": "Sunbeam Window & Door Company proudly serves homeowners and businesses throughout South Jersey and the Philadelphia area. Our experienced installation teams travel to communities within a 35-mile radius of our Pennsauken headquarters.",
+  "counties": [
+    {
+      "name": "Camden County, NJ",
+      "towns": [
+        "Pennsauken Township",
+        "Merchantville",
+        "Cherry Hill",
+        "Camden",
+        "Collingswood",
+        "Haddonfield",
+        "Haddon Township",
+        "Voorhees",
+        "Maple Shade",
+        "Moorestown",
+        "Mount Laurel",
+        "Cinnaminson",
+        "Palmyra",
+        "Riverton",
+        "Delran",
+        "Marlton",
+        "Medford",
+        "Berlin",
+        "Lindenwold",
+        "Clementon",
+        "Stratford",
+        "Somerdale",
+        "Magnolia",
+        "Barrington",
+        "Lawnside",
+        "Gibbsboro",
+        "Gloucester City",
+        "Bellmawr",
+        "Runnemede",
+        "Oaklyn"
+      ]
+    },
+    {
+      "name": "Burlington County, NJ",
+      "towns": [
+        "Burlington Township",
+        "Willingboro",
+        "Florence",
+        "Bordentown",
+        "Mount Holly",
+        "Pemberton",
+        "Evesham"
+      ]
+    },
+    {
+      "name": "Gloucester County, NJ",
+      "towns": [
+        "Woodbury",
+        "Deptford",
+        "Washington Township",
+        "Monroe Township",
+        "Glassboro",
+        "Pitman",
+        "Mantua"
+      ]
+    },
+    {
+      "name": "Philadelphia & Bucks County, PA",
+      "towns": [
+        "Philadelphia",
+        "Bensalem",
+        "Bristol",
+        "Levittown",
+        "Langhorne",
+        "Feasterville",
+        "Trevose",
+        "Croydon",
+        "Cornwells Heights"
+      ]
+    }
+  ]
+}
