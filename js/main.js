@@ -55,21 +55,35 @@
     const overlay = document.querySelector('.mobile-nav-overlay');
     const body = document.body;
     
-    if (!toggle || !overlay) return;
+    if (!toggle || !overlay) {
+      console.log('Mobile menu elements not found');
+      return;
+    }
     
-    toggle.addEventListener('click', function() {
-      const isActive = this.classList.contains('active');
+    console.log('Mobile menu initialized');
+    
+    // Function to toggle menu
+    function toggleMenu(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const isActive = toggle.classList.contains('active');
+      console.log('Menu toggle clicked, isActive:', isActive);
       
       if (isActive) {
-        this.classList.remove('active');
+        toggle.classList.remove('active');
         overlay.classList.remove('active');
         body.style.overflow = '';
       } else {
-        this.classList.add('active');
+        toggle.classList.add('active');
         overlay.classList.add('active');
         body.style.overflow = 'hidden';
       }
-    });
+    }
+    
+    // Add both click and touchend for iOS compatibility
+    toggle.addEventListener('click', toggleMenu);
+    toggle.addEventListener('touchend', toggleMenu);
     
     // Close menu when clicking overlay
     overlay.addEventListener('click', function(e) {
