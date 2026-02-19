@@ -4,44 +4,28 @@ function toggleMobileMenu() {
   var toggle = document.querySelector('.mobile-menu-toggle');
   var body = document.body;
   
-  console.log('toggleMobileMenu called');
-  
-  if (!menu) {
-    console.error('Menu element not found - looking for id="mobileMenu"');
+  if (!menu || !toggle) {
+    console.log('Menu elements not found');
     return;
   }
-  
-  if (!toggle) {
-    console.error('Toggle button not found - looking for class="mobile-menu-toggle"');
-    return;
-  }
-  
-  console.log('Menu found, toggling...');
   
   if (menu.classList.contains('active')) {
     menu.classList.remove('active');
     toggle.classList.remove('active');
     body.style.overflow = '';
-    console.log('Menu closed');
   } else {
     menu.classList.add('active');
     toggle.classList.add('active');
     body.style.overflow = 'hidden';
-    console.log('Menu opened');
   }
 }
 
-// Initialize when page loads
+// Close menu when clicking a link
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('DOM loaded, initializing menu...');
-  
   // Close menu on link click
   var menuLinks = document.querySelectorAll('.mobile-nav-menu a:not([data-submenu])');
-  console.log('Found ' + menuLinks.length + ' menu links');
-  
   menuLinks.forEach(function(link) {
     link.addEventListener('click', function() {
-      console.log('Menu link clicked, closing menu...');
       setTimeout(toggleMobileMenu, 100);
     });
   });
@@ -62,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function (e) {
       var href = this.getAttribute('href');
-      if (href !== '#' && href !== '') {
+      if (href !== '#') {
         e.preventDefault();
         var target = document.querySelector(href);
         if (target) {
@@ -82,8 +66,4 @@ document.addEventListener('DOMContentLoaded', function() {
       link.classList.add('active');
     }
   });
-  
-  console.log('Menu initialization complete');
 });
-
-console.log('main.js loaded successfully');
